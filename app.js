@@ -1,7 +1,22 @@
 var app = angular.module("myApp", ["ngRoute"]);
-app.controller("hello", function($scope) {
-	$scope.app = "hello world"
+
+app.config(function ($routeProvider) {
+	$routeProvider
+		.when("/", {
+			//templateUrl: "main.html"
+			template: "Nothing"
+		})
+		.when("/hello", {
+			templateUrl: "hello.html"
+		})
+		.when("/more", {
+			templateUrl: "more.html",
+		});
 });
-app.controller("more", function($scope){
-	$scope.app = "more";
+
+app.controller("hello", function ($scope) {
+	$scope.world = "hello world"
+});
+app.controller("more", function ($scope) {
+	$scope.more = "more";
 });
