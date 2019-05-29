@@ -3,14 +3,13 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
 	$routeProvider
 		.when("/", {
-			//templateUrl: "main.html"
-			template: "Nothing"
+			templateUrl: "templates/main.html"
 		})
 		.when("/hello", {
-			templateUrl: "hello.html"
+			templateUrl: "templates/hello.html"
 		})
 		.when("/more", {
-			templateUrl: "more.html",
+			templateUrl: "templates/more.html",
 		});
 });
 
