@@ -1,0 +1,23 @@
+{
+  "name": "angularjs_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/angular": "^1.6.54"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewteqDeveloper/angularjs-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewteqDeveloper/angularjs-demo/issues"
+  },
+  "homepage": "https://github.com/NewteqDeveloper/angularjs-demo#readme"
+}
