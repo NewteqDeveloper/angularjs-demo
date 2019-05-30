@@ -1,17 +1,19 @@
-var app = angular.module("ui-routing", []);
+var app = angular.module("ui-routing", ['ui.router']);
 
-app.config(function ($routeProvider) {
-	$routeProvider
-		.when("/", {
-			templateUrl: "templates/main.html"
-		})
-		.when("/hello", {
-			templateUrl: "templates/hello.html"
-		})
-		.when("/more", {
-			templateUrl: "templates/more.html",
-		});
+app.config(function($stateProvider, $urlRouterProvider) {
+
+	$urlRouterProvider.otherwise('/hello');
+
+	var helloState = {
+		name: 'hello',
+		url: '/hello',
+		template: '<h3>Hello world!</h3>'
+	}
+
+	$stateProvider
+			.state(helloState);
 });
+
 
 app.controller("hello", function ($scope, generator) {
 	$scope.world = "hello world and also ---"
