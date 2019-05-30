@@ -3,23 +3,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
 
-<body ng-app="myApp">
+<body>
 	
-	<ul>
-		<li>
-			<a ng-href="#">HOME</a>
-		</li>
-		<li>
-			<a ng-href="#!hello">Hello World</a>
-		</li>
-		<li>
-			<a ng-href="#!more">More...</a>
-		</li>
-	</ul>
+	<div ng-app=myApp>
+		<ul>
+			<li>
+				<a ng-href="#">HOME</a>
+			</li>
+			<li>
+				<a ng-href="#!hello">Hello World</a>
+			</li>
+			<li>
+				<a ng-href="#!more">More...</a>
+			</li>
+		</ul>
+	
+		<ng-view></ng-view>
+	</div>
 
-	<ng-view></ng-view>
+	<div ng-app="typescript">
+		<hello-ts></hello-ts>
+	</div>
 
-	<script src="app.js"></script>
+	<!-- <script src="app.js"></script> -->
+	<script src="typescript/basic/app.js"></script>
+	<script src="typescript/component/hello-typescript.js"></script>
+	<script src="typescript/test.js"></script>
 </body>
 
 </html>

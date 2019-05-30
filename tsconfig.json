@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
-		"module": "system",
+		"module": "commonjs",
 		"target": "es5",
-		"outFile": "./script.js",
-		"sourceRoot": "./typescript/",
-		"sourceMap": true
   },
   "include": [
 		"typescript/**/*"

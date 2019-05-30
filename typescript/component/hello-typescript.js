@@ -1,22 +1,3 @@
-var app = angular.module("myApp", ["ngRoute"]);
-app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-        templateUrl: "templates/main.html"
-    })
-        .when("/hello", {
-        templateUrl: "templates/hello.html"
-    })
-        .when("/more", {
-        templateUrl: "templates/more.html",
-    });
-});
-app.controller("hello", function ($scope) {
-    $scope.world = "hello world";
-});
-app.controller("more", function ($scope) {
-    $scope.more = "more";
-});
 var HEROS = [
     { id: 11, name: "Mr. Nice" },
     { id: 12, name: "Narco" },
@@ -48,6 +29,6 @@ var HerosComponent = /** @class */ (function () {
 angular
     .module("typescript", [])
     .component("hello-ts", new HerosComponent());
-angular.element(document).ready(function () {
-    angular.bootstrap(document, ["typescript"]);
-});
+// angular.element(document).ready(function() {
+//   angular.bootstrap(document, ["typescript"]);
+// });

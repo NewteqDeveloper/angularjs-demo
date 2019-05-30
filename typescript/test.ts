@@ -1,4 +1,4 @@
-export class MyTest {
+class MyTest {
 	public test() {
 		console.log('yay!');
 	}
