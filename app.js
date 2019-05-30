@@ -13,9 +13,24 @@ app.config(function ($routeProvider) {
 		});
 });
 
-app.controller("hello", function ($scope) {
-	$scope.world = "hello world"
+app.controller("hello", function ($scope, generator) {
+	$scope.world = "hello world and also ---"
+	generator.gen().forEach(element => {
+		$scope.world += ` ${element}`;
+	});
 });
 app.controller("more", function ($scope) {
 	$scope.more = "more";
+});
+
+app.service('generator', function() {
+  this.gen = function (x) {
+    return [
+			"Newt",
+			"Mark",
+			"Nick",
+			"Dane",
+			"Dave",
+		]
+  }
 });
