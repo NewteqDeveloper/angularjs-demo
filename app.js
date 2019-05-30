@@ -7,19 +7,19 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 	var homeState = {
 		name: 'home',
 		url: '/',
-		template: 'HOME'
+		templateUrl: 'templates/main.html'
 	}
 
 	var helloState = {
 		name: 'hello',
 		url: '/hello',
-		template: '<h3>Hello world!</h3>'
+		templateUrl: 'templates/hello.html'
 	}
 
 	var moreState = {
 		name: 'more',
 		url: '/more',
-		template: '<h3>More....</h3>'
+		templateUrl: 'templates/more.html'
 	}
 
 	$stateProvider
