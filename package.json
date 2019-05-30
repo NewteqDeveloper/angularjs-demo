@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-demo",
+  "version": "1.0.0",
+  "description": "In order to test test this application with it's routing correctly you need to have http-server installed globally with",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewteqDeveloper/angularjs-demo.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/NewteqDeveloper/angularjs-demo/issues"
+  },
+  "homepage": "https://github.com/NewteqDeveloper/angularjs-demo#readme"
+}
