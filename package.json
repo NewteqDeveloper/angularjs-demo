@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/NewteqDeveloper/angularjs-demo/issues"
   },
-  "homepage": "https://github.com/NewteqDeveloper/angularjs-demo#readme"
+  "homepage": "https://github.com/NewteqDeveloper/angularjs-demo#readme",
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@types/angular": "^1.6.54"
+  }
 }

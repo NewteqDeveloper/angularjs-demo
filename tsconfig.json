@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+		"module": "system",
+		"target": "es5",
+		"outFile": "./script.js",
+		"sourceRoot": "./typescript/",
+		"sourceMap": true
+  },
+  "include": [
+		"typescript/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
