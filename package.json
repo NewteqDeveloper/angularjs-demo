@@ -17,9 +17,6 @@
   },
   "homepage": "https://github.com/NewteqDeveloper/angularjs-demo#readme",
   "devDependencies": {
-    "typescript": "^3.5.1"
-  },
-  "dependencies": {
     "@types/angular": "^1.6.54"
   }
 }
