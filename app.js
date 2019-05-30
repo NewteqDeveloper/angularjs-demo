@@ -41,3 +41,9 @@ app.directive("testComponent", function() {
 		restrict: "E"
 	}
 });
+
+app.filter("makeBig", function() {
+	return function(x) {
+		return x.toUpperCase();
+	};
+});
