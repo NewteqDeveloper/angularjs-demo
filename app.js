@@ -26,7 +26,6 @@ app.controller("more", function ($scope) {
 app.service('generator', function() {
   this.gen = function (x) {
     return [
-			"Newt",
 			"Mark",
 			"Nick",
 			"Dane",
