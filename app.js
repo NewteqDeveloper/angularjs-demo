@@ -34,3 +34,10 @@ app.service('generator', function() {
 		]
   }
 });
+
+app.directive("testComponent", function() {
+	return {
+		templateUrl: 'templates/controllers/test.html',
+		restrict: "E"
+	}
+});
